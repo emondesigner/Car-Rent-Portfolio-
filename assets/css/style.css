@@ -1,0 +1,747 @@
+:root{
+    --light-color:#FFFFFF;
+    --text-color:#000000;
+    --button-color:#2572D3;
+    --box-shaddow-light:rgba(255, 255, 255, 1);
+    --border-color:#707075;
+    --box-shaddow:rgba(121, 121, 121, 0.25);
+    --pragraph-color:#9a9b9c;
+    --copyright-color:#D6D6D6;
+    --miles-background:#ededed;
+    --body_color:#eff1f4;
+}
+
+/*--------------- GOOGLE FONT--------------- */
+h1,h2,h3, .heading_tittle{
+    font-family: "Bebas Neue", sans-serif;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+span{
+    display: inline-block;
+}
+
+/* __________________________________________________HEADER SECCTION START__________________________________________________ */
+#nav{
+    padding:10px 0;
+    box-shadow: var(--box-shaddow);
+    /* position: sticky; */
+    top: 0;
+    z-index:1000;
+    background-color: var(--box-shaddow-light);
+    padding: 0 93px;
+    transition: 0.4s;
+}
+#nav.sticky{
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#nav #navbarSupportedContent ul li {
+    position: relative;
+}
+#nav #navbarSupportedContent .nav-item a{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    /* padding: 0 20px; */
+    text-align: center;
+}
+#nav #navbarSupportedContent  ul  li a.nav:hover{
+    color: var(--button-color);
+}
+#nav #navbarSupportedContent  ul  li.active a.nav{
+    color: var(--button-color);
+}
+#nav #navbarSupportedContent  ul li.active a::after,
+#nav #navbarSupportedContent  ul li:hover a::after{
+    width:100%;
+    left: 0;
+}
+#nav #navbarSupportedContent  ul li a::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom:-25px;
+    left: 0;
+    width:0;
+    height:4px;
+    border-radius: 8px;
+    background-color: var(--button-color);
+    transition: 0.4s;
+}
+#nav #navbarSupportedContent ul li{
+    margin:0 20px;
+}
+a.active_btn{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--light-color);
+    padding: 16px 22px;
+    background-color: var(--button-color);
+    border-radius: 8px;
+    display: inline-block;
+}
+/* __________________________________________________HEADER SECCTION END__________________________________________________ */
+
+
+/* ____________________________________________________HERO SECTION START____________________________________________________ */
+#hero_area {
+   background-image: url(../images/back_img.png);
+   background-position: center;
+   background-size: cover;
+   height: 700px;
+   padding-left:93px;
+}
+
+.hero_area{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.hero_area .hero_info{
+    width:40%;
+    padding-top: 114px;
+}
+.hero_area .hero_info h1{
+    font-size: 77px;
+}
+.hero_area .hero_info h1 span{
+    color: var(--button-color);
+}
+#hero_area .hero_img{
+    width: 60%;
+    padding-top: 71px;
+}
+
+.hero_area .hero_info{
+    position: relative;
+}
+.hero_area .hero_info h1::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 112px;
+    top:95px;
+    left: 0;
+    background-color: var(--button-color);
+    border-radius: 10px;
+}
+
+.hero_area .hero_info p{
+    color: var(--text-color);
+    font-size: 18;
+    padding-bottom: 220px;
+}
+.hero_area .hero_info h1 span{
+    position: relative;
+}
+.hero_area .hero_info h1 span.luxury{
+    padding-left: 5px;
+}
+.hero_area .hero_info h1 span.luxury::after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 4px;
+    background-image: url(../images/hero_img/Vector\ 1.png);
+    height: 20px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-2deg);
+    object-fit: cover;
+}
+.hero_area .hero_info h1 span.car{
+    padding-right: 8px;
+}
+
+
+/* ____________________________________________________HERO SECTION END____________________________________________________ */
+
+
+/* -------------------------------------------detail_date_search------------------------------------------- */
+#detail_date{
+    background-color: var(--body_color);
+    transition: 0.5s;
+}
+#detail_date .container{
+    transform: translateY(-150%);
+    background-color: #fff;
+    border-radius: 12px;
+    position: relative;
+}
+#detail_date .detail_date_search{
+    padding: 17px 32px;
+    justify-content: space-around;
+}
+#detail_date .detail_date_search .iteam_info{
+    display: flex;
+    align-items: center;
+}
+#detail_date .detail_date_search .iteam_info a i{
+    font-size: 30px;
+    transition: 0.5s;
+    padding: 0 10px 0 24px;
+    border-left: 2px solid var(--border-color);
+}#detail_date .detail_date_search .location .iteam_info  a i{
+    border: none;
+}
+#detail_date .detail_date_search .iteam_info span{
+font-weight: 500;
+color: var(--text-color);
+}
+#detail_date .detail_date_search .iteam_info p{
+    color: var(--pragraph-color);
+    font-size: 14px;
+    }
+#detail_date .detail_date_search button{
+color: var(--light-color);
+background-color: var(--button-color);
+border: none;
+padding:14px 50px;
+border-radius: 8px;
+transition: 0.5s;
+}
+#detail_date .detail_date_search button.hide{
+    display: block;
+    transition: 0.5s;
+}
+#detail_date .serach_input{
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    display: none;
+
+}
+#detail_date .serach_input.show{
+    transition:0.5s;
+    bottom: -40px;
+    display: block;
+    transition: block 0.5s;
+}
+#detail_date .serach_input .close_icon{
+    font-size: 20px;
+    color: var(--button-color);
+    padding-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: end;
+}
+#detail_date .serach_input button.submit{
+    display:inline-block ;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    color: var(--button-color);
+    transition: 0.5s;
+}
+#detail_date .serach_input .close_icon:hover,
+#detail_date .serach_input button.submit:hover{
+    transform: scale(1.2);
+}
+#detail_date .serach_input input{
+    padding: 5px 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--button-color);
+    width: 70%;
+}
+#detail_date form{
+    margin-right: -52px;
+    width: 30%;
+    transition: 0.6s;
+ 
+}
+
+
+/* --------------------------------------------------BRANDS SECTION START-------------------------------------------------- */
+#brands {
+    background-color: var(--body_color);
+    margin-top: 29px;
+}
+#brands .brands_slider .brands_logo_slider img{
+    text-align: center;
+
+    margin: auto;
+}
+#brands .head_tittle{
+    padding-top:54px;
+    position: relative;
+}
+#brands .head_tittle .tittle_top h4::before {
+    content: "";
+    position: absolute;
+    top:73px;
+    left:550px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+#brands .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 73px;
+    right:550px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+/* --------------------------------------------------BRANDS SECTION END-------------------------------------------------- */
+
+
+
+/* --------------------------------------------------CAR STYLE SECTION START-------------------------------------------------- */
+#car_style .style_slider .style_logo_slider {
+       display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#car_style .style_slider .style_logo_slider img{
+    margin: auto;
+}
+#car_style{
+    padding-top: 136px;
+    background-color: var(--body_color);
+}
+#car_style .head_tittle .tittle_top h4::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left:550px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+#car_style .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right:550px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+/* --------------------------------------------------CAR STYLE SECTION END-------------------------------------------------- */
+
+
+
+
+/* ______________________________________________________CAR SECTION START______________________________________________________ */
+.head_tittle {
+    text-align: center;
+    position: relative;
+   /* margin: 109px 0; */
+    padding-bottom: 100px;
+}
+.head_tittle .tittle_top h4{
+    color:var(--text-color);
+    font-size: 35px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.head_tittle .tittle_top h4::before{
+content: "";
+position: absolute;
+top:20px;
+left:560px;
+width: 66px;
+height: 3px;
+border-radius:10px;
+background-color: var(--text-color);
+}
+.head_tittle .tittle_top h4::after{
+    content: "";
+    position: absolute;
+    top:20px;
+    right:560px;
+    width: 66px;
+    height: 3px;
+    border-radius:10px;
+    background-color: var(--text-color);
+}
+.head_tittle .tittle_bottom h1{
+    font-size: 63px;
+    font-family: "Bebas Neue", sans-serif;
+    padding-top: 31px;
+    color: var(--text-color);
+}
+.head_tittle .tittle_bottom h1 span{
+    color: var(--button-color);
+}
+#car{
+    background-color: var(--body_color);
+    padding-top: 149px;
+}
+#car .car{
+  display: flex;
+  gap: 65px;
+  flex-wrap: wrap;
+
+}
+#car .car .car_content_box{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;padding: 20px 23px 15px 23px;
+}
+#car .car .car_content_box .icon{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+}
+#car .car .car_content_box .icon .icon_lavel{
+    color: var(--text-color);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    padding-left: 8px;
+    text-transform: uppercase;
+}
+#car .car .car_content_box .car_work{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: var(--miles-background);
+    padding: 6px 5px;
+}
+#car .car .car_content_box .car_work .miles_info p{
+    color: var(--text-color);
+    padding-top: 8px;
+}
+#car .car .car_content_box .details ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#car .car .car_content_box .details{
+    padding-top: 24px;
+}
+#car .car .car_content_box .details ul li:nth-child(1){
+    color: var(--text-color);
+}
+#car .car .car_content_box .details ul li a{
+    display: inline-block;
+    color: var(--light-color);
+    background-color: var(--button-color);
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+#car .car .car_content_box .details ul li a:hover{
+    transform: translate(10%);
+}
+#car .car .car_content_box .car_img img:hover{
+    transform: scale(1.1);
+} 
+#car .car .car_content_box .car_img{
+    overflow: hidden;
+    width: 100%;
+}
+#car .car .car_content_box .car_img img{
+     transition: 0.5s;
+}
+#car .all_vehicles{
+    margin-top: 70px;
+}
+#car .all_vehicles a{
+    border: 2px solid var(--button-color);
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width:16%;
+    padding: 6.5px;
+    border-radius: 5px;
+    color: var(--button-color);
+    transition: transform 0.5s;
+}
+#car .all_vehicles a:hover{
+transform: translateY(-5px);
+}
+#car .all_vehicles a img{
+    padding-right: 16px;
+}
+
+
+/* ______________________________________________________CAR SECTION END______________ ________________________________________ */
+
+
+/* _________________________________________________________SERVICE SECTION START_________________________________________________________ */
+#service .service_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#service{
+    padding-top: 44px;
+    background-color: var(--body_color);
+}
+/* #service {
+    background-image: url(../images/service_bg.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+} */
+#service .service_content .service_box{
+    text-align:center;
+}
+#service .service_content .service_box .img {
+    background-color:var(--button-color);
+    width: 177px;
+    height: 177px;
+    border-radius: 50%;
+    line-height: 177px;
+    text-align: center;
+}
+#service .service_content .service_box .service_info a{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 25px;
+    display: inline-block;
+    transition: 0.5s;
+}
+#service .service_content .service_box .service_info a:hover{
+    transform: scale(1.1);
+}
+
+#service .head_tittle .tittle_top h4::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left:550px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+#service .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right:550px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+
+/*_________________________________________________________ SERVICE SECTION END_________________________________________________________ */
+
+
+
+/*_________________________________________________________ ABOUT SECTION START_________________________________________________________ */
+#about .about_area{
+    display: flex;
+    align-items: center;
+} 
+#about{
+    padding-top: 149px;
+    padding-bottom: 100px;
+    background-color:var(--body_color);
+}
+#about .about_area .img{
+    width:55%;
+}
+#about .about_area .about_info{
+    width: 45%;
+}
+#about .about_area .about_info h4{
+    padding-bottom: 50px;
+    font-size:33px ;
+    color: var(--text-color);
+    font-weight: 500;
+}
+#about .about_area .about_info h4 span{
+    color: var(--button-color);
+}
+#about .about_area .about_info p {
+    font-size:18px;
+    font-weight: 500;
+    color: #78787a;
+}
+#about .about_area .about_info p span{
+    color: var(--button-color);
+}
+
+#about .head_tittle .tittle_top h4::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left:550px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+#about .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right:550px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+/*_________________________________________________________ ABOUT SECTION END_________________________________________________________ */
+
+
+
+/* ----------------------------------------------------FOOTER SECTION START---------------------------------------------------- */
+#footer {
+   background-color: #154e89;
+  }
+  #footer {
+    background-image: url(../images/footer_car.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+  }
+  #footer .container .info .footer_logo img{
+    padding: 44px 0 41px 0;
+  }
+ #footer .footer{
+    border-bottom: 1px solid var(--light-color);
+  }
+#footer .container .info .footer_logo p{
+    color: var(--light-color);
+}
+#footer .company span{
+    color: var(--light-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 72px 0 24px 0;
+}
+#footer .company ul li a{
+    color: var(--light-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    display: inline-block;
+    transition: 0.4s;
+}
+#footer .company ul li a:hover{
+    transform: translate(-10%);
+}
+#footer .news_latter h5.news_tittle{ 
+    color: var(--light-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 72px 0 29px 0;
+}
+#footer .news_latter form input{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 10px 10px 10px 18px;
+}
+#footer .news_latter form input:placeholder-shown{
+    color:#666666;
+}
+#footer .news_latter form button{
+    outline: none;
+    border: none;
+    color: var(--button-color);
+    background-color: var(--light-color);
+    border-radius: 10px;
+    margin-top: 22px;
+    padding: 10px 17px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+#footer .news_latter form button:hover{
+    transform: translate(10%);
+}
+#footer .news_latter .social_media{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    padding-top: 34px;
+    padding-bottom:10px;
+}
+#footer .news_latter .social_media .social_tittle{
+    color: var(--light-color);
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+#footer .news_latter .social_media .social_icon {
+    margin-left: 29px;
+}
+#footer .news_latter .social_media .social_icon ul li a{
+    color: var(--light-color);
+    font-size:20px;
+    padding: 0 10px 0 0;
+    transition: 0.5s;
+    display: inline-block;
+}
+#footer .news_latter .social_media .social_icon ul li a:hover{
+    transform: translate(10%);
+}
+#footer .copy-right{
+    color: var(--copyright-color);
+    font-size: 12px;
+    padding: 32px 0;
+}
+#footer .copy-right span{
+    color: var(--light-color);
+    font-family: "Bebas Neue", sans-serif;
+
+}
+/* ----------------------------------------------------FOOTER SECTION End---------------------------------------------------- */
+
+/* ---------------------- SCROLL BOTTOM TO TOP SECTTION START---------------------- */
+#scroll_btn .scroll{
+    width: 40px;
+    height: 40px;
+    background-color:var(--light-color);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 2px solid var(--button-color);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition:  0.5s;
+    display: none;
+}
+
+
+#scroll_btn .scroll a.scroll_btn{
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+    color: var(--button-color);
+    transition: 0.5s;
+}
+#scroll_btn .scroll a.scroll_btn:hover{
+    color: var(--light-color);
+}
+#scroll_btn .scroll:hover{
+    background-color: var(--button-color);
+    color: var(--light-color);
+    border: 2px solid var(--light-color);
+
+}
+#scroll_btn .scroll.open{
+    display: block;
+}
+/* ---------------------- SCROLL BOTTOM TO TOP SECTTION END---------------------- */
+  
