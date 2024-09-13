@@ -12,19 +12,696 @@
     
 }
 
-/* MD Device */
+/* =------=======================-=-=-=-=-=-===-=-=-=-==-==MD Device=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-======================== */
 @media (min-width:768px) and (max-width:991.98px){
-    
+
+/*/////////////////////////////////////////__________________________________ HOME PAGE START /////////////////////////////////////////__________________________________*/
+/* --------------HEADER SECTION-------------- */
+#nav .navbar-toggler {
+background-color:transparent;
+color: var(--text-whit);
+border:2px solid var(--border-color);
+box-shadow: none;
+}
+#nav  .navbar-toggler-icon{
+    font-size: 16px;
+} 
+#nav #navbarSupportedContent{
+    margin:0 auto;
+
+}
+#nav #navbarSupportedContent ul li{
+    margin:0 auto;
+    padding: 20px 0;
+}
+#nav #navbarSupportedContent ul li a::after {
+    bottom:0px;
+}
+#nav {
+    padding: 0 0px;
+}
+#nav .collapse a.active_btn {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width: 18%;
+    padding:15px ;
+    border-radius: 5px;
+    color: var(--light-color);
+  }
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=HERO AREA SECTION START=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  */
+#hero_area  {
+    height:450px;
+    padding-left:40px;
+}
+
+.hero_area .hero_info {
+    width: 50%;
+    padding-top:90px;
+}
+#hero_area .hero_img {
+    width: 60%;
+    padding-top: 71px;
+}
+.hero_area .hero_info h1 {
+    font-size: 49px;
+}
+.hero_area .hero_info h1::before {
+    top: 60px;
+}
+.hero_area .hero_info p {
+    color: var(--text-color);
+    font-size: 18;
+    padding-bottom: 0;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=HERO AREA SECTION END =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=DETAIL AND DATA SECTION START =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+#detail_date .container {
+    transform: translateY(-90%);
+    background-color: #fff;
+    border-radius: 12px;
+    position: relative;
+  }
+#detail_date .detail_date_search {
+    padding: 10px 0px;
+}  
+#detail_date .detail_date_search .iteam_info span {
+    font-size: 16px;
+}
+#detail_date .detail_date_search .iteam_info p {
+    font-size: 10px;
+}
+#detail_date .detail_date_search .iteam_info a i {
+    font-size: 26px;
+}
+#detail_date .detail_date_search button {
+    padding: 10px 30px;
+    font-size: 15px;
+}
+#detail_date .container form {
+    width: 100%;
+    text-align: end;
+    margin-right: 10px;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=DETAIL AND DATA SECTION END =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=BRANDS SECTION START =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+#brands .head_tittle .tittle_top h4::before {
+    content: "";
+    position: absolute;
+    top: 73px;
+    left: 255px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+  
+#brands .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 73px;
+    right: 255px;
+    width: 66px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=BRANDS SECTION END =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=CAR STYLE SECTION START =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+#car_style .head_tittle .tittle_top h4::before {
+    left: 255px;
+}
+#car_style .head_tittle .tittle_top h4::after {
+    right: 255px;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=CAR STYLE SECTION END =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=CAR SECTION START =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.head_tittle .tittle_top h4::before {
+    left: 255px;
+}
+.head_tittle .tittle_top h4::after {
+    right: 255px;
+}
+#car .car {
+    gap: 30px;
+}
+#car .car .car_content_box {
+    width:48%;
+}
+#car .all_vehicles a {
+    border: 2px solid var(--button-color);
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width:27%;
+    padding: 6.5px;
+    border-radius: 5px;
+    color: var(--button-color);
+    transition: transform 0.5s;
+  }
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=CAR SECTION END =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SERVICES SECTION START =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+#service .head_tittle .tittle_top h4::before {
+    left: 255px;
+}
+#service .head_tittle .tittle_top h4::after {
+    right: 255px;
+}
+#service .service_content .service_box{
+    width:20%;
+}
+#service .service_content .service_box .img {
+    background-color: var(--button-color);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    line-height: 140px;
+    text-align: center;
+}
+#service .service_content .service_box .img img{
+    width:60%;
+}
+#service .service_content .service_box .service_info a {
+    font-size: 16px;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SERVICES SECTION END =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=ABOUT US SECTION START =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+#about .head_tittle .tittle_top h4::before {
+    left: 255px;
+}
+#about .head_tittle .tittle_top h4::after {
+    right: 255px;
+}
+.head_tittle {
+    padding-bottom:80px;
+}
+#about .about_area .img {
+    width: 50%;
+}
+#about .about_area .about_info {
+    width: 50%;
+}
+#about .about_area .about_info h4 {
+    padding-bottom:25px;
+    font-size: 31px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+#about .about_area .about_info p {
+    font-size: 14px;
+    text-align: justify;
+    padding-right: 5px;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=ABOUT US SECTION END =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=FOOTER US SECTION START =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+#footer .container .info .footer_logo img {
+    width: 180px;
+}
+#footer .company span {
+    font-size: 23px;
+    padding: 48px 0 24px 0;
+}
+#footer .company ul li a {
+    font-size: 20px;
+   
+}
+#footer .company ul li a:hover{
+    transform: translateX(10px);
+}  
+#footer .news_latter h5.news_tittle {
+    color: var(--light-color);
+    font-size: 45px;
+    font-weight: 500;
+    padding: 40px 0 20px 0;
+}
+#footer .news_latter form input {
+    padding: 15px 15px 15px 15px;
+    width: 50%;
+}
+#footer .news_latter form button {
+    padding: 15px 25px;
+}
+#footer .copy-right {
+    color: var(--copyright-color);
+    font-size: 16px;
+    padding: 32px 0;
+  }
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=FOOTER US SECTION END =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+/*/////////////////////////////////////////__________________________________ HOME PAGE END /////////////////////////////////////////__________________________________*/
+
+
+
 }
 
 
 /* SM Device */
 @media (min-width:576px) and (max-width:767.98px){
     
+/*/////////////////////////////////////////__________________________________ HOME PAGE START /////////////////////////////////////////__________________________________*/
+/* --------------HEADER SECTION start-------------- */
+
+#nav .navbar-toggler {
+background-color:transparent;
+color: var(--text-whit);
+border:2px solid var(--border-color);
+box-shadow: none;
+}
+#nav  .navbar-toggler-icon{
+    font-size: 16px;
+} 
+#nav #navbarSupportedContent ul li{
+ margin:0 auto;
+padding: 20px 0;
+}
+#nav #navbarSupportedContent ul li a::after {
+bottom:0px;
+}
+#nav {
+ padding: 0 0px;
+} 
+#nav #navbarSupportedContent .nav-item a {
+    font-size: 22px;
+    text-align: center;
+}
+#nav .collapse a.active_btn {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width:25%;
+    padding:15px ;
+    border-radius: 5px;
+    color: var(--light-color);
+}
+/* --------------HEADER SECTION end-------------- */
+
+/* =-=-=-=--------------=--=-=Hero Area section =-=-=-=--------------=--=-=start */
+#hero_area{
+    padding-left: 20px;
+}
+.hero_area{
+    flex-direction: column;
+
+}
+.hero_area .hero_info {
+    width: 100%;
+    padding-top: 0px;
+}
+.hero_area .hero_info p {
+    color: var(--text-color);
+    font-size: 16;
+    padding-bottom: 20px;
+}
+#hero_area .hero_img {
+    width: 100%;
+    padding-top: 0px;
+}
+#hero_area .hero_img img{
+width: 100%;
+}
+.hero_area .hero_info h1::before {
+    height: 3px;
+    width:100px;
+    top: 35px;
+}
+.hero_area .hero_info h1{
+    padding-top: 50px;
+}
+/* =-=-=-=--------------=--=-=Hero Area section =-=-=-=--------------=--=-=End */
+
+/* =-=-=-=--------------=--=-=Detail Date section =-=-=-=--------------=--=-=Start */
+#detail_date .container {
+    transform: translateY(-100%);
+    /* background-color: red; */
+}
+#detail_date .detail_date_search {
+padding: 10px 0px;
+justify-content: space-between;
+}
+#detail_date .detail_date_search .iteam_info {
+    display: flex;
+    align-items: center;
+}
+#detail_date .detail_date_search button {
+    padding: 14px 50px;
+    margin-top: 10px;
+} 
+#detail_date .detail_date_search .iteam_info a i {
+    font-size:24px;
+    padding: 0 10px 0 10px;
+}
+#detail_date .detail_date_search .iteam_info span {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size:14px;
+}
+#detail_date .detail_date_search .iteam_info p {
+    font-size: 10px;
+}
+#detail_date .container form {
+    width: 100%;
+    text-align: end;
+    margin-right: 10px;
+}
+/* =-=-=-=--------------=--=-=Detail Date section =-=-=-=--------------=--=-=End */
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Brands section start=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+#brands .head_tittle .tittle_top h4::before {
+    left: 350px;
+}
+
+#brands .head_tittle .tittle_top h4::after {
+    right:350px;
+}
+.head_tittle .tittle_top h4 {
+    font-size: 30px;
+}
+.head_tittle .tittle_bottom h1 {
+    font-size: 60px;
+}
+#brands .brands_slider .brands_logo_slider img {
+    width:65%;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Brands section end=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+/*-===============================-------- Car style section start -===============================--------*/
+#car_style .head_tittle .tittle_top h4::before {
+    left: 350px;
+}
+
+#car_style .head_tittle .tittle_top h4::after {
+    right:350px;
+}
+#car_style .style_slider .style_logo_slider img {
+    width:65%;
+}
+/*-===============================-------- Car style section end -===============================--------*/
+
+
+/*-===============================-------- Car section start -===============================--------*/
+.head_tittle .tittle_top h4::before {
+    left: 350px;
+}
+
+.head_tittle .tittle_top h4::after {
+    right:350px;
+}
+#car .car .car_content_box {
+    width:95%;
+    text-align: center;
+   margin: 0 auto;
+}
+#car .all_vehicles a {
+    width:36%;
+}
+/*-===============================-------- Car section end -===============================--------*/
+
+
+/*-===============================--------Services section start -===============================--------*/
+#service  .head_tittle .tittle_top h4::before {
+    left: 350px;
+}
+
+#service .head_tittle .tittle_top h4::after {
+    right:350px;
+}
+#service .service_content {
+    flex-direction: column;
+    justify-content:space-between;
+}
+#service .service_content .service_box {
+    width: 95%;
+    padding:  20px 0 25px 0;
+}
+#service .service_content .service_box .img {
+    margin: 0 auto;
+}
+/*-===============================--------Services  section end -===============================--------*/
+
+
+/*-===============================--------About  section end -===============================--------*/
+#about  .head_tittle .tittle_top h4::before {
+    left: 350px;
+}
+#about  .head_tittle{
+    padding-bottom: 50px;
+}
+#about .head_tittle .tittle_top h4::after {
+    right:350px;
+}
+#about .about_area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#about .about_area .img {
+    width:100%;
+    order: 1;
+}
+#about .about_area .about_info {
+    width: 95%;
+}
+#about .about_area .about_info h4 {
+    padding-bottom: 20px;
+    font-size: 38px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+/*-===============================--------About section end -===============================--------*/
+
+
+/*-===============================--------Footer section start -===============================--------*/
+#footer .container .info {
+    text-align: center;
+}
+#footer .container .info .footer_logo img {
+    padding: 35px 0 35px 0;
+    width: 50%;
+}
+#footer .container .info .footer_logo p {
+    color: var(--light-color);
+    text-align: justify;
+}
+#footer .company span {
+    color: var(--light-color);
+    font-size: 33px;
+    font-weight: bold;
+}
+#footer .company ul li a {
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+#footer .news_latter h5.news_tittle {
+    font-size: 32px;
+    padding: 32px 0 7px 0;
+}
+#footer .news_latter .social_media {
+    justify-content: center;
+}
+#footer .copy-right {
+    text-align: center;
+}   
+/*-===============================--------Footer section end -===============================--------*/
+
+
+/*-===============================--------Scroll Bottom To Top section start -===============================--------*/
+#scroll_btn .scroll {
+    width: 35px;
+    height: 35px;
+    bottom: 25px;
+    right: 25px;
+    line-height: 35px;
+}
+/*-===============================--------Scroll Bottom To Top section end -===============================--------*/
+  
+
+
+/*/////////////////////////////////////////__________________________________ HOME PAGE END /////////////////////////////////////////__________________________________*/
+    
+    
+
+
 }
 
 
 /* XS Device */
 @media  (max-width:575.98px){
+
+/*/////////////////////////////////////////__________________________________ HOME PAGE START /////////////////////////////////////////__________________________________*/
+/* --------------HEADER SECTION start-------------- */
+
+#nav .navbar-toggler {
+    background-color:transparent;
+    color: var(--text-whit);
+    border:2px solid var(--border-color);
+    box-shadow: none;
+    }
+    #nav  .navbar-toggler-icon{
+        font-size: 16px;
+    } 
+    #nav #navbarSupportedContent ul li{
+     margin:0 auto;
+    padding: 20px 0;
+    }
+    #nav #navbarSupportedContent ul li a::after {
+    bottom:0px;
+    }
+    #nav {
+     padding: 0 0px;
+    } 
+    #nav #navbarSupportedContent .nav-item a {
+        font-size: 22px;
+        text-align: center;
+    }
+    #nav .collapse a.active_btn {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        width:42%;
+        padding:15px ;
+        border-radius: 5px;
+        color: var(--light-color);
+    }
+    /* --------------HEADER SECTION end-------------- */
+
+/* =-=-=-=--------------=--=-=Hero Area section =-=-=-=--------------=--=-=start */
+#hero_area  {
+    height:400px;
+    padding: 0 20px;
+}
+.hero_area{
+    flex-direction: column;
+
+}
+.hero_area .hero_info {
+    width: 100%;
+    padding-top: 0px;
+}
+#hero_area .hero_img {
+    width: 100%;
+    padding-top: 0px;
+}
+#hero_area .hero_img img{
+width: 100%;
+}
+
+.hero_area .hero_info h1 {
+    font-size: 50px;
+    padding-top: 50px;
+}
+.hero_area .hero_info h1::before {
+    height: 3px;
+    width:100px;
+    top: 35px;
+}
+.hero_area .hero_info p {
+    padding-bottom:20px;
+    width: 100%;
+    text-align: justify;
+    padding-right:10px;
+  }
+/* =-=-=-=--------------=--=-=Hero Area section =-=-=-=--------------=--=-=End */
+
+
+/* =-=-=-=--------------=--=-=Detail Date section =-=-=-=--------------=--=-=Start */
+#detail_date .container {
+    transform: translateY(25%);
+    /* background-color: red; */
+}
+#detail_date .detail_date_search {
+padding: 10px 0px;
+justify-content: space-between;
+}
+
+#detail_date .detail_date_search button {
+    padding: 10px 40px;
+    margin-top: 10px;
+} 
+/* #detail_date .detail_date_search .iteam_info a i {
+    font-size:24px;
+    padding: 0 10px 0 10px;
+}
+#detail_date .detail_date_search .iteam_info span {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size:14px;
+}
+#detail_date .detail_date_search .iteam_info p {
+    font-size: 10px;
+} */
+#detail_date .container form {
+    width: 100%;
+    text-align: end;
+    margin-right: 10px;
+}
+#detail_date .detail_date_search .location{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.6s;
+}
+#detail_date .detail_date_search .pickup_date{
+    width: 49%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.6s;
+}
+#detail_date .detail_date_search .pickup_date{
+    width: 49%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#detail_date .detail_date_search .location:hover,
+#detail_date .detail_date_search .pickup_date:hover{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+#detail_date .detail_date_search .iteam_info a i {
+    border: none;
+    font-size:22px;
+    padding-left: 0;
+}
+#detail_date .detail_date_search .iteam_info p {
+    font-size: 11px;
+    font-weight: 500;
+}
+#detail_date .detail_date_search {
+    padding: 0px 0px;
+}
+#detail_date .detail_date_search .iteam_info{
+    padding: 0px 0;
+}
+#detail_date .detail_date_search .iteam_info span {
+    font-size: 14px;
+}
+/* =-=-=-=--------------=--=-=Detail Date section =-=-=-=--------------=--=-=End */
+
+
+/*/////////////////////////////////////////__________________________________ HOME PAGE end /////////////////////////////////////////__________________________________*/
+    
     
 }

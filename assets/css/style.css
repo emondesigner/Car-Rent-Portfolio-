@@ -175,7 +175,7 @@ a.active_btn{
 }
 #detail_date .detail_date_search{
     padding: 17px 32px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #detail_date .detail_date_search .iteam_info{
     display: flex;
