@@ -590,8 +590,8 @@ justify-content: space-between;
 
 /* =-=-=-=--------------=--=-=Hero Area section =-=-=-=--------------=--=-=start */
 #hero_area  {
-    height:400px;
-    padding: 0 20px;
+    height:450px;
+    padding:0 0 0 20px;
 }
 .hero_area{
     flex-direction: column;
@@ -610,7 +610,7 @@ width: 100%;
 }
 
 .hero_area .hero_info h1 {
-    font-size:38px;
+    font-size:35px;
     padding-top: 50px;
 }
 .hero_area .hero_info h1::before {
@@ -698,8 +698,18 @@ justify-content: space-between;
 #detail_date .detail_date_search .iteam_info span {
     font-size: 14px;
 }
+#detail_date .serach_input input {
+    padding: 5px 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--button-color);
+    width: 50%;
+  }
 /* =-=-=-=--------------=--=-=Detail Date section =-=-=-=--------------=--=-=End */
-
+#brands{
+    margin-top: 10px;
+}
 
 /*/////////////////////////////////////////__________________________________ HOME PAGE end /////////////////////////////////////////__________________________________*/
     
