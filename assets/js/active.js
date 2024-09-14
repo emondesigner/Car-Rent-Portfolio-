@@ -95,7 +95,7 @@ ScrollReveal().reveal('#detail_date, .brands_slider, .car, .footer, .all_vehicle
 ScrollReveal().reveal('.head_tittle, .copy-right', {origin: 'top'});
 
 ScrollReveal().reveal('.service_box, .car_content_box', {origin: 'bottom', delay:500,interval: 500});
-ScrollReveal().reveal('.icon', {origin: 'bottom', delay:200,interval: 500});
+ScrollReveal().reveal('.social_icon i', {origin: 'bottom', delay:1000,interval: 500});
 // ........................SCROLL REVEAL JS END........................
 
 
