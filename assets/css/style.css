@@ -264,7 +264,7 @@ transition: 0.5s;
 /* --------------------------------------------------BRANDS SECTION START-------------------------------------------------- */
 #brands {
     background-color: var(--body_color);
-    margin-top: 29px;
+    margin-top: 0px;
 }
 #brands .brands_slider .brands_logo_slider img{
     text-align: center;

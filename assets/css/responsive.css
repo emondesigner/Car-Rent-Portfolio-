@@ -646,7 +646,7 @@ width: 100%;
 }
 #detail_date .serach_input.show {
     transition: 0.5s;
-    bottom: -30px;
+    bottom: -40px;
     display: block;
     transition: block 0.5s;
     text-align: start;
@@ -668,7 +668,7 @@ width: 100%;
 
 /* -===============================BRANDS SECTION START-=============================== */
 #brands {
-    margin-top: -230px;
+    margin-top: -203px;
 }
 #brands .head_tittle {
     padding-top: 54px;

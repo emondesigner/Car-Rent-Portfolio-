@@ -81,8 +81,17 @@ $('.style_slider').slick({
 });
 //  ..................................CAR  STYLE  SLIDER SECTION END .................................. 
 
+ScrollReveal({
+  distance: "80px",
+  duration: 1000,
+  delay: 300,
+});
+ScrollReveal().reveal('.hero_info, .about_area', {origin: 'left'});
+ScrollReveal().reveal('.hero_img, .style_slider, .about_info', {origin: 'right'});
+ScrollReveal().reveal('#detail_date, .brands_slider, .car, .footer, .all_vehicles', {origin: 'bottom'});
+ScrollReveal().reveal('.head_tittle, .copy-right', {origin: 'top'});
 
-
+ScrollReveal().reveal('.service_box, .car_content_box', {origin: 'bottom', delay:500,interval: 500});
     
 })  
 
