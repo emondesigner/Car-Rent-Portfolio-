@@ -623,7 +623,7 @@ width: 100%;
 
 /* =-=-=-=--------------=--=-=Detail Date section =-=-=-=--------------=--=-=Start */
 #detail_date .container {
-    transform: translateY(-112%);
+    transform: translateY(-100%);
     background-color: transparent;
 }
 #detail_date .detail_date_search {
@@ -634,7 +634,6 @@ width: 100%;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    border: 2px solid;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 #detail_date .detail_date_search  .iteam_info a i {
@@ -687,7 +686,7 @@ width: 100%;
     content: "";
     position: absolute;
     top: 67px;
-    left: 50px;
+    left: 65px;
     width: 50px;
     height: 2px;
     border-radius: 10px;
@@ -697,7 +696,7 @@ width: 100%;
     content: "";
     position: absolute;
     top: 67px;
-    right:50px;
+    right:65px;
     width:50px;
     height:2px;
 }
@@ -719,7 +718,7 @@ width: 100%;
     content: "";
     position: absolute;
     top: 13px;
-    left: 50px;
+    left: 65px;
     width: 50px;
     height: 2px;
     border-radius: 10px;
@@ -729,7 +728,7 @@ width: 100%;
     content: "";
     position: absolute;
     top: 13px;
-    right:50px;
+    right:65px;
     width:50px;
     height:2px;
 }
@@ -748,7 +747,7 @@ width: 100%;
     content: "";
     position: absolute;
     top: 13px;
-    left:65px;
+    left:85px;
     width: 50px;
     height: 2px;
   }
@@ -756,7 +755,7 @@ width: 100%;
     content: "";
     position: absolute;
     top: 13px;
-    right:65px;
+    right:85px;
     width:50px;
     height:2px;
 }
@@ -765,7 +764,7 @@ width: 100%;
     margin: 0 auto;
 }
 #car .all_vehicles a {
-    width: 95%;
+    width:70%;
 }
 /* -======================---------------CAR SECTION END-======================--------------- */
 
@@ -774,7 +773,7 @@ width: 100%;
     content: "";
     position: absolute;
     top: 13px;
-    left:50px;
+    left:70px;
     width: 50px;
     height: 2px;
   }
@@ -782,7 +781,7 @@ width: 100%;
     content: "";
     position: absolute;
     top: 13px;
-    right:50px;
+    right:70px;
     width:50px;
     height:2px;
 }
