@@ -81,7 +81,10 @@ $('.style_slider').slick({
 });
 //  ..................................CAR  STYLE  SLIDER SECTION END .................................. 
 
+
+// ........................SCROLL REVEAL JS START........................
 ScrollReveal({
+  reset: true,
   distance: "80px",
   duration: 1000,
   delay: 300,
@@ -92,7 +95,12 @@ ScrollReveal().reveal('#detail_date, .brands_slider, .car, .footer, .all_vehicle
 ScrollReveal().reveal('.head_tittle, .copy-right', {origin: 'top'});
 
 ScrollReveal().reveal('.service_box, .car_content_box', {origin: 'bottom', delay:500,interval: 500});
-    
+ScrollReveal().reveal('.icon', {origin: 'bottom', delay:200,interval: 500});
+// ........................SCROLL REVEAL JS END........................
+
+
+
+
 })  
 
   
