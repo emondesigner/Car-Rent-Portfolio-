@@ -579,6 +579,12 @@ justify-content: space-between;
         text-align: center;
         width:100%;
     }
+    #nav.sticky{
+        position: sticky;
+        top: 0;
+        background-color: red;
+        /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    }
     /* --------------HEADER SECTION end-------------- */
 
 /* =-=-=-=--------------=--=-=Hero Area section =-=-=-=--------------=--=-=start */
@@ -883,7 +889,7 @@ width: 100%;
 }
 #footer .copy-right {
     color: var(--copyright-color);
-    font-size: 15px;
+    font-size: 10px;
     padding: 17px 0;
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-FOOTER SECTION END=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -893,7 +899,7 @@ width: 100%;
 #scroll_btn .scroll {
     width: 35px;
     bottom:20px;
-    right:90px;
+    right:30px;
   }
 /* ----------SCROLL BOTTOM TO TOP SECTION END---------- */
 

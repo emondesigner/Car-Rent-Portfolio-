@@ -85,17 +85,16 @@ $('.style_slider').slick({
 // ........................SCROLL REVEAL JS START........................
 ScrollReveal({
   reset: true,
-  distance: "80px",
+  distance: "20px",
   duration: 1000,
-  delay: 300,
+  delay: 100,
 });
 ScrollReveal().reveal('.hero_info, .about_area', {origin: 'left'});
 ScrollReveal().reveal('.hero_img, .style_slider, .about_info', {origin: 'right'});
 ScrollReveal().reveal('#detail_date, .brands_slider, .car, .footer, .all_vehicles', {origin: 'bottom'});
-ScrollReveal().reveal('.head_tittle, .copy-right', {origin: 'top'});
+ScrollReveal().reveal('.head_tittle,', {origin: 'top'});
 
 ScrollReveal().reveal('.service_box, .car_content_box', {origin: 'bottom', delay:500,interval: 500});
-ScrollReveal().reveal('.social_icon i', {origin: 'bottom', delay:1000,interval: 500});
 // ........................SCROLL REVEAL JS END........................
 
 

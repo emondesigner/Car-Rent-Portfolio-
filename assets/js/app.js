@@ -31,7 +31,7 @@ window.addEventListener("scroll",function(){
 let scrollNav = document.querySelector('#nav');
 
 window.addEventListener("scroll",function(){
-    if(window.scrollY > 0){
+    if(window.scrollY > 5){
         scrollNav.classList.add('sticky');
     }else{
         scrollNav.classList.remove('sticky');
