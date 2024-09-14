@@ -576,21 +576,14 @@ justify-content: space-between;
         text-align: center;
     }
     #nav .collapse a.active_btn {
-        display: inline-block;
-        display: flex;
-        align-items: center;
-        margin: auto;
         text-align: center;
-        width:42%;
-        padding:15px ;
-        border-radius: 5px;
-        color: var(--light-color);
+        width:100%;
     }
     /* --------------HEADER SECTION end-------------- */
 
 /* =-=-=-=--------------=--=-=Hero Area section =-=-=-=--------------=--=-=start */
 #hero_area  {
-    height:450px;
+    height:700px;
     padding:0 0 0 20px;
 }
 .hero_area{
@@ -610,7 +603,7 @@ width: 100%;
 }
 
 .hero_area .hero_info h1 {
-    font-size:35px;
+    font-size:38px;
     padding-top: 50px;
 }
 .hero_area .hero_info h1::before {
@@ -620,6 +613,7 @@ width: 100%;
 }
 .hero_area .hero_info p {
     padding-bottom:20px;
+    padding-top: 10px;
     width: 100%;
     text-align: justify;
     padding-right:10px;
@@ -629,88 +623,58 @@ width: 100%;
 
 /* =-=-=-=--------------=--=-=Detail Date section =-=-=-=--------------=--=-=Start */
 #detail_date .container {
-    transform: translateY(25%);
-    /* background-color: red; */
+    transform: translateY(-112%);
+    background-color: transparent;
 }
 #detail_date .detail_date_search {
-padding: 10px 0px;
-justify-content: space-between;
+    padding: 8px 0px;
+    justify-content: space-between;
 }
-
-#detail_date .detail_date_search button {
-    padding: 10px 40px;
-    margin-top: 10px;
-} 
-/* #detail_date .detail_date_search .iteam_info a i {
-    font-size:24px;
-    padding: 0 10px 0 10px;
+#detail_date .detail_date_search .iteam_info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-#detail_date .detail_date_search .iteam_info span {
-    font-weight: 500;
-    color: var(--text-color);
-    font-size:14px;
-}
-#detail_date .detail_date_search .iteam_info p {
-    font-size: 10px;
-} */
-#detail_date .container form {
-    width: 100%;
-    text-align: end;
-    margin-right: 10px;
-}
-#detail_date .detail_date_search .location{
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    transition: 0.6s;
-}
-#detail_date .detail_date_search .pickup_date{
-    width: 49%;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    transition: 0.6s;
-}
-#detail_date .detail_date_search .pickup_date{
-    width: 49%;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-#detail_date .detail_date_search .location:hover,
-#detail_date .detail_date_search .pickup_date:hover{
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-}
-#detail_date .detail_date_search .iteam_info a i {
+#detail_date .detail_date_search  .iteam_info a i {
     border: none;
-    font-size:22px;
-    padding-left: 0;
+    font-size: 24px;
 }
-#detail_date .detail_date_search .iteam_info p {
-    font-size: 11px;
-    font-weight: 500;
+#detail_date .detail_date_search button {
+    margin: 0 8px;
+    width: 95%;
 }
-#detail_date .detail_date_search {
-    padding: 0px 0px;
-}
-#detail_date .detail_date_search .iteam_info{
-    padding: 0px 0;
-}
-#detail_date .detail_date_search .iteam_info span {
-    font-size: 14px;
+#detail_date .serach_input.show {
+    transition: 0.5s;
+    bottom: -30px;
+    display: block;
+    transition: block 0.5s;
+    text-align: start;
+    margin-left: 0;
+    width: 100%;
 }
 #detail_date .serach_input input {
     padding: 5px 10px;
     border-radius: 8px;
-    outline: none;
+    outline: 0;
     border: none;
     border: 1px solid var(--button-color);
-    width: 50%;
+    width:70%;
+    align-items: start;
+    justify-content: start;
   }
 /* =-=-=-=--------------=--=-=Detail Date section =-=-=-=--------------=--=-=End */
-#brands{
-    margin-top: 10px;
-}
 
+
+/* -===============================BRANDS SECTION START-=============================== */
+#brands {
+    margin-top: -230px;
+}
+#brands .head_tittle {
+    padding-top: 54px;
+    position: relative;
+}
 .head_tittle .tittle_top h4 {
     color: var(--text-color);
     font-size: 25px;
@@ -722,23 +686,218 @@ justify-content: space-between;
 #brands .head_tittle .tittle_top h4::before {
     content: "";
     position: absolute;
-    top: 65px;
-    left: 9px;
-    width: 66px;
-    height: 3px;
-    border-radius: 10px;
-    background-color: var(--text-color);
-}
-#brands .head_tittle .tittle_top h4::after {
-    content: "";
-    position: absolute;
-    top: 65px;
-    right:9px;
-    width: 66px;
-    height: 3px;
+    top: 67px;
+    left: 50px;
+    width: 50px;
+    height: 2px;
     border-radius: 10px;
     background-color: var(--text-color);
   }
+#brands .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 67px;
+    right:50px;
+    width:50px;
+    height:2px;
+}
+.head_tittle {
+    padding-bottom: 45px;
+}
+#brands .brands_slider .brands_logo_slider img {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+/* -===============================BRANDS SECTION END-=============================== */
+
+/* ==-============================================---------CAR STYLE SECTION START==-============================================--------- */
+#car_style {
+    padding-top: 23px;
+}
+#car_style .head_tittle .tittle_top h4::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 50px;
+    width: 50px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+  }
+#car_style .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right:50px;
+    width:50px;
+    height:2px;
+}
+#car_style .style_slider .style_logo_slider img {
+    margin: auto;
+    width: 70%;
+}
+/* ==-============================================---------CAR STYLE SECTION END==-============================================--------- */
+
+
+/* -======================---------------CAR SECTION START-======================---------------  */
+#car {
+    padding-top: 55px;
+}
+#car .head_tittle .tittle_top h4::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left:65px;
+    width: 50px;
+    height: 2px;
+  }
+#car .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right:65px;
+    width:50px;
+    height:2px;
+}
+#car .car .car_content_box {
+    width: 90%;
+    margin: 0 auto;
+}
+#car .all_vehicles a {
+    width: 95%;
+}
+/* -======================---------------CAR SECTION END-======================--------------- */
+
+/* -====================---==-=-=-=-==-=---SERVICE SECTION START-====================---==-=-=-=-==-=--- */
+#service .head_tittle .tittle_top h4::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left:50px;
+    width: 50px;
+    height: 2px;
+  }
+#service .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right:50px;
+    width:50px;
+    height:2px;
+}
+#service .service_content {
+    flex-direction: column;
+}
+#service .service_content .service_box {
+    text-align: center;
+    width: 95%;
+    margin-bottom: 15px;
+}
+#service .service_content .service_box .img {
+    margin: auto;
+  }
+/* -====================---==-=-=-=-==-=---SERVICE SECTION END-====================---==-=-=-=-==-=--- */
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-ABOUT SECTION START=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+#about .head_tittle .tittle_top h4::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left:50px;
+    width: 50px;
+    height: 2px;
+  }
+#about .head_tittle .tittle_top h4::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right:50px;
+    width:50px;
+    height:2px;
+}
+#about .about_area {
+    flex-direction: column;
+}
+#about .about_area .img {
+    width: 100%;
+    order: 1;
+}
+#about .about_area .about_info {
+    width: 100%;
+}
+#about .about_area .about_info h4 {
+    padding-bottom: 17px;
+    font-size: 24px;
+    text-align: center;
+}
+#about .about_area .about_info p {
+    font-size: 16px;
+    text-align: center;
+    text-align: justify;
+    padding: 0 8px;
+}
+#about {
+    padding-top: 20px;
+    padding-bottom: 21px;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-ABOUT SECTION END=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-FOOTER SECTION START=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+#footer .container .info .footer_logo img {
+    padding: 25px 0 15px 0;
+    width: 70%;
+}
+#footer .container .info .footer_logo{
+    text-align: center;
+}
+#footer .container .info .footer_logo p {
+    text-align: justify;
+}
+#footer .company span {
+    font-size: 40px;
+    padding: 22px 0 24px 0;
+}
+#footer .company ul li a {
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 14px;
+}
+#footer .news_latter h5.news_tittle {
+    font-size: 22px;
+    padding: 24px 0 24px 0;
+}
+#footer .news_latter form input {
+    width: 100%;
+}
+#footer .news_latter form button {
+    margin-top:10px;
+
+}
+#footer .news_latter .social_media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 34px;
+    padding-bottom: 10px;
+}
+#footer .copy-right {
+    color: var(--copyright-color);
+    font-size: 15px;
+    padding: 17px 0;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-FOOTER SECTION END=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+  
+
+/*---------- SCROLL BOTTOM TO TOP SECTION START---------- */
+#scroll_btn .scroll {
+    width: 35px;
+    bottom:20px;
+    right: 8px;
+  }
+/* ----------SCROLL BOTTOM TO TOP SECTION END---------- */
+
 /*/////////////////////////////////////////__________________________________ HOME PAGE end /////////////////////////////////////////__________________________________*/
     
     
