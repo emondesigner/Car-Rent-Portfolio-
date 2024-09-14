@@ -94,8 +94,16 @@ ScrollReveal().reveal('.hero_img, .style_slider, .about_info', {origin: 'right'}
 ScrollReveal().reveal('#detail_date, .brands_slider, .car, .footer, .all_vehicles', {origin: 'bottom'});
 ScrollReveal().reveal('.head_tittle,', {origin: 'top'});
 
-ScrollReveal().reveal('.service_box, .car_content_box', {origin: 'bottom', delay:500,interval: 500});
+ScrollReveal().reveal('.service_box, .car_content_box', {origin: 'bottom', delay:500, interval: 500});
 // ........................SCROLL REVEAL JS END........................
+ScrollReveal({
+  reset: true,
+  distance: "5px",
+  duration: 1000,
+  delay: 200,
+});
+ScrollReveal().reveal('.social_tittle', {origin: 'left', delay:500, interval: 500});
+ScrollReveal().reveal('.social_icon ul li', {origin: 'right', delay:1000, interval: 500});
 
 
 
